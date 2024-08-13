@@ -1,0 +1,403 @@
+/* 
+1. Posicionamiento
+2. Modelo de Caja
+3. Tipografia
+4. Efectos Visuales
+5. Otros
+*/
+
+:root {
+    /* Colores */
+    --red-matic: #bb3e2d; 
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;   
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 20px;
+    min-height: 250px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #282623 16.69%,  #bb3e2d 100%);
+}
+
+header img{
+    width: 140px;
+    height: 80px;
+    margin-top: 50px;
+    align-self: center;
+}
+.header--title-container {
+    width: 85%;
+    min-width: 250px;
+    max-width: 900px;
+    height: 210px;
+    margin-top: 35px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+    color: var(--just-white);
+}
+
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 195px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 180px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--red-matic);
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url(./Assets/Icons/down-arrow.svg);
+
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    box-sizing: border-box;
+}
+
+.main-services{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.main-services-topografia{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+    
+}
+.main-services .Img_topografia{
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url(./Assets/img/Ingeniero_en_obra.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-services-topografia h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+.main-services-topografia li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+
+.main-services-arquitectonicos {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-services-arquitectonicos h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+
+.main-services-arquitectonicos li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+.main-services .Img_arq {
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: url(./Assets/img/Proyectos.png)
+    
+}
+
+.main-services-hidraulicas {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-services-hidraulicas h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+
+.main-services-hidraulicas li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+.main-services .Img_hidraulicas {
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: url(./Assets/img/Sanitario.png)
+}
+.main-services-suelos {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-services-suelos h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+
+.main-services-suelos li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+.main-services .Img_suelos {
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: url(./Assets/img/Suelos.jpeg)
+}
+
+.main-services-georreferenciacion {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-services-georreferenciacion h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+
+.main-services-georreferenciacion li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+.main-services .Img_geo {
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: url(./Assets/img/Georreferencia.jpg)
+}
+
+.main-services-estructuracion {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-services-estructuracion h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+
+.main-services-estructuracion li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+
+.main-services .Img_proyectos {
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: url(./Assets/img/Portada.png)
+}
+ 
+.main-services-consultoria {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-services-consultoria h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+
+.main-services-consultoria li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+.main-services .Img_consultoria {
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: url(./Assets/img/Topografia.jpeg)
+}
+
+.main-services-software {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main-services-software h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    color: var(--red-matic);
+}
+
+.main-services-software li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: var(--warm-black);
+    justify-content: center;
+}
+.main-services .Img_software{
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: url(./Assets/img/software.jpg)
+}
+
+.main-clientes {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.main-nuestros_clientes h2 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    color: var(--red-matic);
+}
+.main-clientes .imagen{
+    width: 100%;
+}
+.main-clientes .imagen img{
+    width: 70px;
+    height: 70px;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--warm-black);
+    box-sizing: border-box;
+}
+
+footer .Copy_right{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--red-matic);
+    font-size: 1.4rem;
+}
+    
